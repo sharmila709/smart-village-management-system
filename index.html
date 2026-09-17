@@ -1,193 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smart Village System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Digital Village</title>
 
-<style>
-body{
-    margin:0;
-    font-family:Arial;
-    background:#f4f4ff;
-    text-align:center;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.header{
-    background:indigo;
-    color:white;
-    text-align:center;
-    padding:30px;
-    height:100px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4efff;
+            color: #3b176d;
+        }
 
-.header h1{
-    margin-top:30px;
-}
+        header {
+            background: #4b168c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
 
-.container{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:50px;
-}
+        header h1 {
+            font-size: 32px;
+        }
 
-.card{
-    width:280px;
-    background:white;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
+        .hero {
+            min-height: calc(100vh - 90px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 8%;
+            gap: 40px;
+        }
 
-.card:hover{
-    transform:scale(1.05);
-}
+        .content {
+            max-width: 550px;
+        }
 
-button{
-    padding:10px 20px;
-    border:none;
-    background:indigo;
-    color:white;
-    border-radius:8px;
-    cursor:pointer;
-    margin-top:10px;
-}
+        .content h2 {
+            font-size: 52px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
 
-button:hover{
-    background:#4b0082;
-}
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #5d4775;
+        }
 
-img{
-    width:80px;
-    height:80px;
-}
+        .btn {
+            display: inline-block;
+            background: #4b168c;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 17px;
+        }
 
-.footer{
-    margin-top:60px;
-    padding:20px;
-    background:#eee;
-}
-/* ================= MOBILE VIEW ================= */
+        .btn:hover {
+            background: #351064;
+        }
 
-@media(max-width:600px){
+        .image-box {
+            width: 48%;
+        }
 
-    body{
-        padding:0;
-    }
+        .image-box img {
+            width: 100%;
+            max-height: 430px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
 
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 35px 20px;
+            }
 
-    .header{
-        height:auto;
-        padding:25px 15px;
-    }
+            .content h2 {
+                font-size: 38px;
+            }
 
+            .image-box {
+                width: 100%;
+            }
 
-    .header h1{
-        margin-top:10px;
-        font-size:24px;
-        line-height:32px;
-    }
-
-
-    .container{
-        flex-direction:column;
-        align-items:center;
-        gap:20px;
-        margin-top:30px;
-        padding:15px;
-    }
-
-
-    .card{
-        width:90%;
-        max-width:330px;
-        padding:20px;
-    }
-
-
-    .card:hover{
-        transform:none;
-    }
-
-
-    .card h2{
-        font-size:22px;
-    }
-
-
-    .card p{
-        font-size:14px;
-    }
-
-
-    img{
-        width:70px;
-        height:70px;
-    }
-
-
-    button{
-        width:100%;
-        padding:12px;
-    }
-
-
-    .footer{
-        margin-top:30px;
-        font-size:14px;
-    }
-
-}
-</style>
-
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="header">
-    <h1>🏠 Smart Digital Village Management System</h1>
-</div>
+    <header>
+        <h1>Smart Digital Village Management System</h1>
+    </header>
 
-<div class="container">
+    <section class="hero">
 
-    <!-- CITIZEN -->
-    <div class="card">
-        <img src="assets/person.png">
-        <h2>Citizen</h2>
-        <p>Registration, Complaints, Services</p>
-        <a href="citizen/loginpage.html">
-            <button>Login</button>
-        </a>
-    </div>
+        <div class="content">
+            <h2>Building a Smarter Village</h2>
 
-    <!-- AI MODULE -->
-    <div class="card">
-        <img src="assets/ai_img.png">
-        <h2>AI Analytics</h2>
-        <p>Dashboards, Predictions, Chatbot</p>
-        <a href="ai/login.html">
-            <button>View AI</button>
-        </a>
-    </div>
+            <p>
+                Connecting people, services and technology
+                for a better digital village.
+            </p>
 
-    <!-- ADMIN -->
-    <div class="card">
-        <img src="assets/person.png">
-        <h2>Admin</h2>
-        <p>Management, Reports, Control Panel</p>
-        <a href="admin/login.html">
-            <button>Login</button>
-        </a>
-    </div>
+            <a href="portal.html" class="btn">
+                Get Started →
+            </a>
+        </div>
 
-</div>
+        <div class="image-box">
+            <img src="assets/landing-village.png" alt="Smart Village">
+        </div>
 
-<div class="footer">
-    <p>Smart Village Project © 2026</p>
-</div>
+    </section>
 
 </body>
 </html>
