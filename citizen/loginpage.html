@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Digital Village System - Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,indigo);
+}
+
+.login-container{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.logo{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#333;
+    margin-bottom:20px;
+}
+
+.input-box{
+    margin:15px 0;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid indigo;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.login-btn{
+    width:100%;
+    padding:12px;
+    background:indigo;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.login-btn:hover{
+    background:#382865;
+}
+
+.links{
+    margin-top:15px;
+}
+
+.links a{
+    text-decoration:none;
+    color:indigo;
+}
+
+.footer{
+    margin-top:20px;
+    color:indigo;
+    font-size:13px;
+}
+
+.error{
+    color:red;
+    margin-bottom:10px;
+}
+.back{
+    color:indigo;
+    
+}
+/* ================= MOBILE VIEW ================= */
+
+@media(max-width:600px){
+
+    body{
+        padding:15px;
+        height:100vh;
+    }
+
+
+    .login-container{
+        width:100%;
+        max-width:350px;
+        padding:25px 20px;
+        border-radius:12px;
+    }
+
+
+    .logo{
+        font-size:50px;
+    }
+
+
+    h2{
+        font-size:22px;
+        line-height:30px;
+    }
+
+
+    .input-box{
+        margin:12px 0;
+    }
+
+
+    .input-box input{
+        font-size:14px;
+        padding:11px;
+    }
+
+
+    .login-btn{
+        font-size:16px;
+        padding:11px;
+    }
+
+
+    .links{
+        font-size:14px;
+    }
+
+
+    .footer{
+        font-size:12px;
+    }
+
+}
+</style>
+
+</head>
+
+<body style="font-family: 'Playfair Display', serif;">
+
+<div class="login-container">
+
+    <div class="logo">🏡</div>
+
+    <h2>Smart Digital Village System</h2>
+
+    <!-- ERROR MESSAGE FROM PHP -->
+    <div class="error">
+        <?php
+        if(isset($_GET['error'])){
+            echo "Invalid email or password!";
+        }
+        ?>
+    </div>
+
+    <!-- SEND DATA TO PHP FILE -->
+    <form action="loginpage.php" method="POST">
+
+        <div class="input-box">
+            <input type="text" name="email" placeholder="Enter mail" required>
+        </div>
+
+        <div class="input-box password-box">
+
+            <input 
+                type="password" 
+                name="password" 
+                id="password"
+                placeholder="Enter Password" 
+                required>
+
+        </div>
+
+        <button class="login-btn" type="submit" name="login">
+            Login
+        </button>
+        <a  class="back" href="../index.html">Back</a>
+    </form>
+    <br>
+    <div>
+        Don't have an account?
+        <a href="register.php">Register Here</a>
+    </div>
+
+    <div class="footer">
+        © 2026 Smart Digital Village System
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display',serif;
+    background: indigo;
+}
+
+/* FULL SCREEN CENTER */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* LOGIN BOX */
+.login-box {
+    background: white;
+    padding: 35px 30px;
+    width: 350px;
+   min-height: 400px;
+justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* TITLES */
+.login-box h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.login-box h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* INPUT BOX */
+.input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.input-box i {
+    margin-right: 10px;
+    color: #666;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: indigo;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.a button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: indigo;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: indigo;
+}
+/* ================= MOBILE VIEW ================= */
+
+@media(max-width:768px){
+
+    body{
+        background:indigo;
+        padding:0;
+    }
+
+
+    .container{
+
+        height:100vh;
+        width:100%;
+        padding:15px;
+        box-sizing:border-box;
+
+    }
+
+
+    .login-box{
+
+        width:100%;
+        max-width:350px;
+
+        min-height:auto;
+
+        padding:25px 20px;
+
+        box-sizing:border-box;
+
+    }
+
+
+    .login-box h1{
+
+        font-size:20px;
+
+    }
+
+
+    .login-box h2{
+
+        font-size:18px;
+
+    }
+
+
+    .input-box{
+
+        width:100%;
+        box-sizing:border-box;
+
+    }
+
+
+    .input-box input{
+
+        font-size:16px;
+
+    }
+
+
+    button{
+
+        width:100%;
+        padding:14px;
+
+    }
+
+}

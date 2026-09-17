@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Analytics Login</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f4f4ff;
+padding:20px;
+}
+
+.a{
+    color:indigo;
+    margin-left:150px;
+}
+.login-box{
+
+width:100%;
+max-width:380px;
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 5px 20px #aaa;
+
+}
+
+
+h2{
+text-align:center;
+color:indigo;
+margin-bottom:20px;
+}
+
+
+input,select,button{
+
+width:100%;
+height:48px;
+margin-top:15px;
+padding:10px;
+border-radius:10px;
+font-size:16px;
+
+}
+
+
+input,select{
+
+border:1px solid #ccc;
+
+}
+
+
+button{
+
+background:indigo;
+color:white;
+border:none;
+cursor:pointer;
+
+}
+
+
+
+@media(max-width:480px){
+
+.login-box{
+padding:20px;
+}
+
+
+h2{
+font-size:22px;
+}
+
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="login-box">
+
+
+<h2>AI Analytics Login</h2>
+
+
+<form action="login.php" method="POST">
+
+
+<input 
+type="email"
+name="email"
+placeholder="Enter Email ID"
+required>
+
+
+<input 
+type="password"
+name="password"
+placeholder="Enter Password"
+required>
+
+
+<select name="user_type">
+
+
+<option value="admin">
+Admin
+</option>
+
+
+<option value="citizen">
+Citizen
+</option>
+
+
+</select>
+
+
+
+<button type="submit" name="login">
+
+Login
+
+</button>
+<a href="../index.html" class="a">Back</a>
+
+
+</form>
+
+
+</div>
+
+
+</body>
+
+</html>
