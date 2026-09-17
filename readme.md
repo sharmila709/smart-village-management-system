@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-The Smart Village Management System is a web-based application developed to digitize and simplify village administration. It provides a centralized platform for managing village records, public services, complaints, taxes, announcements, and other administrative activities.
+The Smart Village Management System is a web-based application developed to digitize and simplify village administration.
 
-The system is designed to improve transparency, efficiency, and communication between village administrators and citizens.
+It provides a centralized platform for managing citizens, complaints, taxes, announcements, village information, administration and analytics.
 
 ---
 
@@ -12,7 +12,7 @@ The system is designed to improve transparency, efficiency, and communication be
 
 ### Admin Module
 - Secure Admin Login
-- Dashboard with Statistics
+- Admin Dashboard
 - Citizen Management
 - Complaint Management
 - Tax Management
@@ -30,7 +30,14 @@ The system is designed to improve transparency, efficiency, and communication be
 - View Complaint Status
 - View Announcements
 - Tax Details
-- View Village Information
+- Village Information
+
+### AI Analytics Module
+- Analytics Dashboard
+- Complaint Analytics
+- Tax Analytics
+- Data Visualization
+- AI-based Analysis
 
 ---
 
@@ -47,70 +54,17 @@ The system is designed to improve transparency, efficiency, and communication be
 ### Database
 - MySQL
 
+### Data Visualization
+- Chart.js
+
 ### Server
 - XAMPP (Apache + MySQL)
 
 ---
 
-## Software Requirements
+## Project Structure
 
-- XAMPP
-- PHP 8.x or above
-- MySQL
-- Modern Web Browser (Chrome, Edge, Firefox)
-
----
-
-## Installation Steps
-
-### Step 1
-Download and install XAMPP.
-
-### Step 2
-Copy the project folder into:
-
-```
-xampp/htdocs/
-```
-
-### Step 3
-Start:
-
-- Apache
-- MySQL
-
-from the XAMPP Control Panel.
-
-### Step 4
-Open phpMyAdmin.
-
-Create a database.
-
-Example:
-
-```
-smart_village
-```
-
-### Step 5
-
-Import the SQL file included in the project.
-
-### Step 6
-
-Open the browser.
-
-Example:
-
-```
-http://localhost/SmartVillageSystem/
-```
-
----
-
-
-## Folder Structure
-
+```text
 smart_village_system/
 │
 ├── admin/
@@ -118,86 +72,56 @@ smart_village_system/
 ├── assets/
 ├── citizen/
 ├── database_sql/
-│   └── smart_village_system (15).sql
 ├── db.php
 ├── index.html
+├── portal.html
 ├── readme.md
 └── .gitignore
----
 
-## Modules
+How to Run
 
-- Home
-- Admin
-- Citizen
-- Complaints
-- Taxes
-- Announcements
-- Village Map
-- Reports
-- Dashboard
-- Login History
+  1.Install XAMPP.
+  2.Place the project inside the htdocs folder.
+  3.Start Apache and MySQL from XAMPP Control Panel.
+  4.Open phpMyAdmin.
+  5.Create the required database.
+  6.Import the SQL file from the database_sql folder.
+  7.Open the project in a browser:
+     http://localhost/smart_village_system/
 
----
+Project Flow
 
-## Database
+Intro Page
+     ↓
+Role Selection
+     ↓
+Login
+     ↓
+Dashboard
 
-Database Name:
+Project Objectives
+1.Digitize village administration.
+2.Reduce paperwork.
+3.Improve citizen services.
+4.Simplify complaint management.
+5.Manage citizen records efficiently.
+6.Provide quick access to village information.
+7.Support data-driven administration through analytics.
 
-```
-smart_village
-```
+Future Enhancements
+1.Online Tax Payment
+2.SMS and Email Notifications
+3.Mobile Application
+4.QR Code Based Citizen ID
+5.AI-based Complaint Analysis
+6.Multi-language Support
 
-Import:
+Developed By
+D. Sharmila
+Bachelor of Engineering
+Computer Science and Engineering
 
-```
-smart_village.sql
-```
-
----
-
-## Security Features
-
-- Session-based Authentication
-- Password Protection
-- Input Validation
-- SQL Injection Prevention
-- Secure Login System
-
----
-
-## Future Enhancements
-
-- Online Tax Payment
-- SMS Notifications
-- Email Notifications
-- Aadhaar Verification
-- Mobile Application
-- QR Code Based Citizen ID
-- AI-based Complaint Analysis
-- Multi-language Support
-
----
-
-## Project Objectives
-
-- Digitize village administration.
-- Reduce paperwork.
-- Improve transparency.
-- Simplify complaint handling.
-- Efficient citizen record management.
-- Provide quick access to village information.
-
----
-
-## Developed By
-
-**D.Sharmila**
-
-Bachelor of Engineering (Computer Science)
-
----
-
-## License
-
+License
 This project is developed for educational and learning purposes.
+
+
