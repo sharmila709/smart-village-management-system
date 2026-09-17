@@ -108,24 +108,21 @@ http://localhost/SmartVillageSystem/
 
 ---
 
+
 ## Folder Structure
 
-```
-SmartVillageSystem/
-
+smart_village_system/
 │
 ├── admin/
+├── ai/
+├── assets/
 ├── citizen/
-├── php/
-├── images/
-├── css/
-├── js/
-├── database/
-│     └── smart_village.sql
-├── README.md
-└── index.php
-```
-
+├── database_sql/
+│   └── smart_village_system (15).sql
+├── db.php
+├── index.html
+├── readme.md
+└── .gitignore
 ---
 
 ## Modules
